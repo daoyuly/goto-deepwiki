@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Goto Deepwiki",
+  "version": "1.0",
+  "author": "https://github.com/daoyuly/goto-deepwiki",
+  "description": "github goto deepwiki",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "declarativeContent"
+  ],
+  "action": {
+    "default_icon": "icon-32.png"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "resources": [
+        "img/*.png"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
