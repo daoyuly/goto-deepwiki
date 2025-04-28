@@ -1,8 +1,7 @@
-# goto_gitdiagram
-## How to use
-- Download dit/goto_gitdiagram.zip to your local directory
-- Unzip the file
+# goto deepwiki
+## How to use 
+- git clone git@github.com:daoyuly/goto-deepwiki.git
 - Open chrome://extensions/
-- Load unpacked extension
+- Load unpacked extension goto-deepwiki
 
 ![](./screenshot.png)
